@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/03/22||19:58:23" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="plast_asm" uid="plast_asm" version="143">
+<AssemblyFile name="plast_asm.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="bukk-1" uid="bukk-1" entityUid="bukk" rigid="true">
+<Transform>
+<Rotation>-1 -1.224646799147353e-16 0 1.224646799147353e-16 -1 -3.4694469519536132e-16 0 -3.4694469519536132e-16 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="tverr_bukk-1" uid="tverr_bukk-1" entityUid="tverr_bukk*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="bukk-2" uid="bukk-2" entityUid="bukk*:*Default">
+<Transform>
+<Rotation>0 -1 3.4694469519536137e-16 1 0 -3.4694469519536137e-16 3.4694469519536137e-16 3.4694469519536137e-16 1</Rotation>
+<Translation>0.01999999999999999 0 -0.03500000000000001</Translation>
+</Transform>
+</Instance>
+<Instance name="bukk-1" uid="bukk-1" entityUid="bukk*:*Default">
+<Transform>
+<Rotation>0 -1 -3.4694469519536142e-16 1 0 -1.3010426069826078e-16 1.3010426069826078e-16 -3.4694469519536142e-16 1</Rotation>
+<Translation>-0.01999999999999998 0 -0.03500000000000001</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="vippe-1" uid="vippe-1" entityUid="vippe" rigid="true">
+<Transform>
+<Rotation>-1.2848133140707641e-16 -3.4476189875141636e-16 1 -0.99984869160689116 0.017395226126386637 -1.2246467991473337e-16 -0.017395226126386637 -0.99984869160689116 -3.4694469519535639e-16</Rotation>
+<Translation>0 -0.00026092839189582027 -0.020002269625896109</Translation>
+</Transform>
+<Instance name="vippe_v-1" uid="vippe_v-1" entityUid="vippe_v*:*Default">
+<Transform>
+<Rotation>1.0000000000000002 0 0 0 1.224646799147353e-16 1.0000000000000002 0 -1 1.2246467991473539e-16</Rotation>
+<Translation>0 0.01750000000000022 0.015499999999999981</Translation>
+</Transform>
+</Instance>
+<Instance name="vippe_v-2" uid="vippe_v-2" entityUid="vippe_v*:*Default">
+<Transform>
+<Rotation>1.0000000000000002 0 0 0 0 1.0000000000000002 0 -1 0</Rotation>
+<Translation>0 0.017500000000000408 -0.015500000000000003</Translation>
+</Transform>
+</Instance>
+<Instance name="vippe_h-1" uid="vippe_h-1" entityUid="vippe_h*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="plate-1" uid="plate-1" entityUid="plate*:*Default">
+<Transform>
+<Rotation>0 3.4694469519536137e-16 -1 1 3.4694469519536127e-16 0 3.4694469519536127e-16 -1 -3.4694469519536137e-16</Rotation>
+<Translation>-0.074999999999999997 -0.030000000000000009 0.016999999999999973</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bukk-1</Uid>
+<Uid>tverr_bukk-1</Uid>
+</InstancePath>
+<Position>-0.018000000000000006 0.002 0.015000000000000003</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>plate-1</Uid>
+</InstancePath>
+<Position>0 0.0019999999999999983 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bukk-1</Uid>
+<Uid>bukk-2</Uid>
+</InstancePath>
+<Position>0 -0.0020000000000000018 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>plate-1</Uid>
+</InstancePath>
+<Position>0.015000000000000005 0.002 -0.052999999999999992</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bukk-1</Uid>
+<Uid>bukk-2</Uid>
+</InstancePath>
+<Position>0.015000000000000003 0.0020000000000000018 0.05000000000000001</Position>
+<Axis>1 0 4.3368086899420217e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>plate-1</Uid>
+</InstancePath>
+<Position>0.015000000000000005 0.002 -0.052999999999999992</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bukk-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>plast_asm</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bukk-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>plast_asm</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bukk-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>plast_asm</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>bukk-1</Uid>
+<Uid>bukk-2</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>vippe-1</Uid>
+<Uid>vippe_v-2</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 -0.0024999999999999398</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>bukk-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>vippe-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="bukk" uid="bukk" version="137">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="bukk.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="vippe" uid="vippe" version="133">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="vippe.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="bukk" uid="bukk*:*Default" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="bukk.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0085759677832011588</Mass>
+<CenterOfMass>0 0 0.021643671376240615</CenterOfMass>
+<Inertia>2.9979821105145289e-06 3.8338185649774163e-06 8.58705701884757e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="bukk_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="plate" uid="plate*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="plate.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.24929716814692823</Mass>
+<CenterOfMass>-5.6853641217058894e-05 0 0.00021144399421863915</CenterOfMass>
+<Inertia>0.0012981942856246324 0.0025988686696865899 0.0013013391765103498 0 -1.0660057728201619e-06 0</Inertia>
+</MassProperties>
+<GeometryFile name="plate_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="tverr_bukk" uid="tverr_bukk*:*Default" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="tverr_bukk.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0046400000000000009</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>3.3285333333333366e-07 9.2165333333333395e-07 6.0117333333333361e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="tverr_bukk_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="vippe_h" uid="vippe_h*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="vippe_h.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.03116</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>2.6867833333333382e-06 0.00016736890333333342 0.00016476521333333341 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="vippe_h_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="vippe_v" uid="vippe_v*:*Default" version="131">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="vippe_v.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.032857168146928191</Mass>
+<CenterOfMass>0 0 -0.0010178272277687904</CenterOfMass>
+<Inertia>3.0825053688916357e-06 0.00017325273910285009 0.00017025785284901688 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="vippe_v_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
